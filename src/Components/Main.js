@@ -2,10 +2,11 @@ import React from "react";
 import Navbar from "./Navbar";
 import Team from "./Team";
 import Footer from "./Footer";
+import { Col,Row, Button } from "reactstrap";
 
 export const MainPage=()=>{
     return(
-        <div >      
+        <div>      
       {/* ---------- header ---------  */}
       <div id="home" className="main-header mb-5 align-items-center" style={{height:"100% !important", display:"flex", justifyContent:"center", alignItems:"center"}}>
         <div className="container">
@@ -96,7 +97,7 @@ export const MainPage=()=>{
           <div className="col-lg-6 col-12 text-left d-flex justify-content-center" style={{flexDirection:'column'}}>
             <h3>Machine Intelligence</h3>
             <p>Learn how to drive user engagement and retention with intelligent apps that are able to effectively serve users what they need without the fuss by providing these systems with the ability to automatically learn and improve from experience without being explicitly programmed.</p>
-            <button className="btn techbtn" style={{width:'25%'}}><a style={{color:"white"}} href="http://bit.ly/dscDiscord">Join Discord</a></button>
+            <button className="btn techbtn" style={{width:'25%'}}><a style={{color:"white"}} href="http://bit.ly/dscDiscord">Join Discord <i class="fab fa-discord pl-1" style={{color:"white"}}></i></a></button>
           </div>
         </div>
 
@@ -105,7 +106,7 @@ export const MainPage=()=>{
         <div className="col-lg-6 col-12 text-left d-flex justify-content-center mb-2 " style={{flexDirection:'column'}}>
             <h3>Android Development</h3>
             <p>Every year Google developers release exciting new updates to the world's most popular operating system. We always have sessions to keep you updated and mastering the latest trends in modern Android development.</p>
-            <button className="btn techbtn" style={{width:'25%'}}><a style={{color:"white"}} href="http://bit.ly/dscDiscord">Join Discord</a></button>
+            <button className="btn techbtn" style={{width:'25%'}}><a style={{color:"white"}} href="http://bit.ly/dscDiscord">Join Discord <i class="fab fa-discord pl-1" style={{color:"white"}}></i></a></button>
           </div>
           <div className="col-lg-6 col-12">
             <img src="/Images/andriod-dev.png" alt="ml" img="img-fluid" width="300"/>
@@ -121,7 +122,7 @@ export const MainPage=()=>{
           <div className="col-lg-6 col-12 text-left d-flex justify-content-center" style={{flexDirection:'column'}}>
             <h3>Web Development</h3>
             <p>Learn the core foundations of a delightful web experience both for the user and developer. Stay up to tabs with emerging and trending technologies. Get access to a guided, tutorial and hands-on coding experience.</p>
-            <button className="btn techbtn" style={{width:'25%'}}><a style={{color:"white"}} href="http://bit.ly/dscDiscord">Join Discord</a></button>
+            <button className="btn techbtn" style={{width:'25%'}}><a style={{color:"white"}} href="http://bit.ly/dscDiscord">Join Discord <i class="fab fa-discord pl-1" style={{color:"white"}}></i></a></button>
           </div>
         </div>
 
@@ -130,7 +131,7 @@ export const MainPage=()=>{
         <div className="col-lg-6 col-12 text-left d-flex justify-content-center mb-2 " style={{flexDirection:'column'}}>
             <h3>Cloud Computing</h3>
             <p>For passionate developers who want to stay relevant in a cloud first world where businesses demand for agility and innovation and prompt rise of cloud-native applications to bridges gaps between data, insight, and action.</p>
-            <button className="btn techbtn" style={{width:'25%'}}><a style={{color:"white"}} href="http://bit.ly/dscDiscord">Join Discord</a></button>
+            <button className="btn techbtn" style={{width:'25%'}}><a style={{color:"white"}} href="http://bit.ly/dscDiscord">Join Discord <i class="fab fa-discord pl-1" style={{color:"white"}}></i></a></button>
           </div>
           <div className="col-lg-6 col-12">
             <img src="/Images/cp.png" alt="ml" img="img-fluid" width="300"/>
@@ -151,10 +152,17 @@ export const MainPage=()=>{
                 <div class="card">
                 <img src="/Images/app-poster.jpg" className="card-img-top img-fluid" alt="web-poster" width="300" />
                 <div class="card-body">
-                  <p className="text-left m-0 p-0 card-text"><i class="far fa-calendar-alt text-primary"></i> 26th Sep 2020</p>
-                  <p className="text-left card-text m-0 p-0"><i class="far fa-clock text-success"></i> Starts @5:00pm</p>
-                  <p className="bg-danger text-left pl-2 pr-2 level" style={{width:"28%",borderRadius:"25px", color:"#fff",fontSize:"12px"}}>Intermediate</p>
-                  <a href="#" class="btn btn-primary float-right attend-btn" style={{background:"#2f5be7"}}>Attend</a>
+                <Row>
+                  <Col>
+                      <p className="text-left m-0 p-0 card-text"><i class="far fa-calendar-alt text-primary"></i> 26th Sep 2020</p>
+                      <p className="text-left card-text mt-2 m-0 p-0"><i class="far fa-clock text-success"></i> Starts @5:00pm</p>
+                      <p className="bg-danger text-left mt-2 pl-2 pr-2 level" style={{width:"70%",borderRadius:"25px", color:"#fff",fontSize:"12px"}}>Intermediate</p>
+                  </Col>
+                  <Col>
+                    <a href="#" class="btn btn-primary float-right attend-btn" style={{background:"#2f5be7"}}>Attend</a>
+                  </Col>
+                </Row>
+                 
                 </div>
               </div>
               </div>
@@ -163,10 +171,16 @@ export const MainPage=()=>{
               <div class="card">
                 <img src="/Images/web-poster.jpg" className="card-img-top img-fluid" alt="web-poster"/>
                 <div class="card-body">
-                <p className="text-left m-0 p-0 card-text"><i class="far fa-calendar-alt text-primary"></i> 26th Sep 2020</p>
-                  <p className="text-left card-text m-0 p-0"><i class="far fa-clock text-success"></i> Starts @6:00pm</p>
-                  <p className="bg-danger text-left pl-2 pr-2 level" style={{width:"28%",borderRadius:"25px", color:"#fff",fontSize:"12px"}}>Intermediate</p>
-                  <a href="#" class="btn btn-primary float-right attend-btn" style={{background:"#2f5be7"}}>Attend</a>
+                <Row>
+                  <Col>
+                      <p className="text-left m-0 p-0 card-text"><i class="far fa-calendar-alt text-primary"></i> 26th Sep 2020</p>
+                      <p className="text-left card-text mt-2 m-0 p-0"><i class="far fa-clock text-success"></i> Starts @5:00pm</p>
+                      <p className="bg-danger text-left mt-2 pl-2 pr-2 level" style={{width:"70%",borderRadius:"25px", color:"#fff",fontSize:"12px"}}>Intermediate</p>
+                  </Col>
+                  <Col>
+                    <a href="#" class="btn btn-primary float-right attend-btn" style={{background:"#2f5be7"}}>Attend</a>
+                  </Col>
+                </Row>
                 </div>
               </div>
               </div>
@@ -174,10 +188,16 @@ export const MainPage=()=>{
               <div class="card">
                 <img src="/Images/ml-poster.jpg" className="card-img-top img-fluid" alt="web-poster" />
                 <div class="card-body">
-                <p className="text-left m-0 p-0 card-text"><i class="far fa-calendar-alt text-primary"></i> 27th Sep 2020</p>
-                  <p className="text-left card-text m-0 p-0"><i class="far fa-clock text-success"></i> Starts @5:00pm</p>
-                  <p className="bg-danger text-left pl-2 pr-2 level" style={{width:"28%",borderRadius:"25px", color:"#fff",fontSize:"12px"}}>Intermediate</p>
-                  <a href="#" class="btn btn-primary float-right attend-btn" style={{background:"#2f5be7"}}>Attend</a>
+                <Row>
+                  <Col>
+                      <p className="text-left m-0 p-0 card-text"><i class="far fa-calendar-alt text-primary"></i> 26th Sep 2020</p>
+                      <p className="text-left card-text mt-2 m-0 p-0"><i class="far fa-clock text-success"></i> Starts @5:00pm</p>
+                      <p className="bg-danger text-left mt-2 pl-2 pr-2 level" style={{width:"70%",borderRadius:"25px", color:"#fff",fontSize:"12px"}}>Intermediate</p>
+                  </Col>
+                  <Col>
+                    <a href="#" class="btn btn-primary float-right attend-btn" style={{background:"#2f5be7"}}>Attend</a>
+                  </Col>
+               </Row>
                 </div>
               </div>
               </div>

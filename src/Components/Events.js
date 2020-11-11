@@ -15,7 +15,7 @@ export const Events=()=>{
 
   useEffect(()=>{getData();},[])
     return(
-        <div> 
+        <div style={{marginTop:"100px"}}> 
           <div className="event-sec m-5">
         <div className="container">
           <h3 className="text-center">Events & Workshops</h3>

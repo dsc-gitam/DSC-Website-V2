@@ -17,10 +17,10 @@ const Footer = () => {
               <span className="text-muted">
                 Feel free to drop us an email at{" "}
               </span>
-              <a href="mailto:team@dsc.scuniversityname.org">
-                Dscoffical@gmail.com
+              <a href="mailto:dsc_vzg@gitam.in">
+              dsc_vzg@gitam.in
               </a>
-              <ul className="list-unstyled d-flex justify-content-center align-items-center fa-lg mt-3">
+              <ul className="list-unstyled d-flex justify-content-center align-items-center fa-lg mt-3" >
                 <li className="">
                   <a href="#">
                     <i class="fab fa-discord"></i>
