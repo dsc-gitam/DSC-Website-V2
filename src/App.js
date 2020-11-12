@@ -17,6 +17,7 @@ import { EditItem } from "./Admin/EditItem";
 import { Toast } from "reactstrap";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { MainEvents } from "./Components/MainEvents";
 
 firebase.initializeApp(firebaseConfig);
 

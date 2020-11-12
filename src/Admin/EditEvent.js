@@ -41,7 +41,9 @@ export const EditEvent=()=>{
   }
 
   
-  arr=Object.entries(events);
+  if(events!=null){
+    arr=Object.entries(events);
+  }
   console.log(arr);
   if(arr!=null && arr!=[]){
     console.log("sdds");
@@ -52,7 +54,7 @@ export const EditEvent=()=>{
 
   useEffect(()=>{getData();},[])
     return(
-       (true)?(
+       (isAdmin)?(
         <div style={{marginTop:"100px"}}> 
         <div className="event-sec m-5">
       <div className="container">

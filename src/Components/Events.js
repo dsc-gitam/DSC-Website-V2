@@ -16,10 +16,12 @@ export const Events=()=>{
     })
     
   };
+  if(events!=null){
   Object.entries(events).map(([key,value])=>{
     arr[i]=value;
     i++;
   });
+}
   console.log(arr);
   if(arr!=null && arr!=[]){
     sortedData = arr.sort((a, b) => new Date(...a.Date.split('/').reverse()) - new Date(...b.Date.split('/').reverse()));

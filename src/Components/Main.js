@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Team from "./Team";
 import Footer from "./Footer";
 import { Col,Row, Button } from "reactstrap";
+import { MainEvents } from "./MainEvents";
 
 export const MainPage=()=>{
     return(
@@ -147,61 +148,9 @@ export const MainPage=()=>{
       <div className="container">
         <h3 className="text-center">Events & Workshops</h3>
           <p className="text-center">Come learn, share and connect with us in person.</p>
-            <div className="row ">
-              <div className="col-lg-4 col-md-6 col-12 card-btm">
-                <div class="card">
-                <img src="/Images/app-poster.jpg" className="card-img-top img-fluid" alt="web-poster" width="300" />
-                <div class="card-body">
-                <Row>
-                  <Col>
-                      <p className="text-left m-0 p-0 card-text"><i class="far fa-calendar-alt text-primary"></i> 26th Sep 2020</p>
-                      <p className="text-left card-text mt-2 m-0 p-0"><i class="far fa-clock text-success"></i> Starts @5:00pm</p>
-                      <p className="bg-danger text-left mt-2 pl-2 pr-2 level" style={{width:"70%",borderRadius:"25px", color:"#fff",fontSize:"12px"}}>Intermediate</p>
-                  </Col>
-                  <Col>
-                    <a href="#" class="btn btn-primary float-right attend-btn" style={{background:"#2f5be7"}}>Attend</a>
-                  </Col>
-                </Row>
-                 
-                </div>
-              </div>
-              </div>
+              
 
-              <div className="col-lg-4 col-md-6 col-12 card-btm">
-              <div class="card">
-                <img src="/Images/web-poster.jpg" className="card-img-top img-fluid" alt="web-poster"/>
-                <div class="card-body">
-                <Row>
-                  <Col>
-                      <p className="text-left m-0 p-0 card-text"><i class="far fa-calendar-alt text-primary"></i> 26th Sep 2020</p>
-                      <p className="text-left card-text mt-2 m-0 p-0"><i class="far fa-clock text-success"></i> Starts @5:00pm</p>
-                      <p className="bg-danger text-left mt-2 pl-2 pr-2 level" style={{width:"70%",borderRadius:"25px", color:"#fff",fontSize:"12px"}}>Intermediate</p>
-                  </Col>
-                  <Col>
-                    <a href="#" class="btn btn-primary float-right attend-btn" style={{background:"#2f5be7"}}>Attend</a>
-                  </Col>
-                </Row>
-                </div>
-              </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-12 card-btm">
-              <div class="card">
-                <img src="/Images/ml-poster.jpg" className="card-img-top img-fluid" alt="web-poster" />
-                <div class="card-body">
-                <Row>
-                  <Col>
-                      <p className="text-left m-0 p-0 card-text"><i class="far fa-calendar-alt text-primary"></i> 26th Sep 2020</p>
-                      <p className="text-left card-text mt-2 m-0 p-0"><i class="far fa-clock text-success"></i> Starts @5:00pm</p>
-                      <p className="bg-danger text-left mt-2 pl-2 pr-2 level" style={{width:"70%",borderRadius:"25px", color:"#fff",fontSize:"12px"}}>Intermediate</p>
-                  </Col>
-                  <Col>
-                    <a href="#" class="btn btn-primary float-right attend-btn" style={{background:"#2f5be7"}}>Attend</a>
-                  </Col>
-               </Row>
-                </div>
-              </div>
-              </div>
-            </div>
+              <MainEvents/>
       </div>
     </div>
 
