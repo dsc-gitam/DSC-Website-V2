@@ -4,6 +4,9 @@ import { Col,Row, Button } from "reactstrap";
 
 export const Events=()=>{
   const [events,setEvents]=useState("");
+  var arr=[];
+  let sortedData=[];
+  let i=0;
   const getData=async ()=>{
     const eventsRef=await firebase.database().ref('/events');
     eventsRef.on('value',(snapshot)=>{
@@ -11,7 +14,19 @@ export const Events=()=>{
       setEvents(snapshot.val())
       console.log(events);
     })
+    
   };
+  Object.entries(events).map(([key,value])=>{
+    arr[i]=value;
+    i++;
+  });
+  console.log(arr);
+  if(arr!=null && arr!=[]){
+    sortedData = arr.sort((a, b) => new Date(...a.Date.split('/').reverse()) - new Date(...b.Date.split('/').reverse()));
+    console.log(sortedData)
+ }
+ 
+    
 
   useEffect(()=>{getData();},[])
     return(
@@ -22,8 +37,8 @@ export const Events=()=>{
             <p className="text-center">Come learn, share and connect with us in person.</p>
             <div className="row ">
             {
-            (events!=null)?(
-              Object.entries(events).map(([key,value])=>(
+            // (sortedData!=null)?(
+              sortedData.map((value)=>(
         <div className="col-lg-4 col-md-6 col-12 card-btm" style={{width:"300px"}}>
           <img class="card-img-top" style={{height:"250px"}} src={value.picture} alt="Card image cap"/>
           <div class="card-body">
@@ -47,7 +62,9 @@ export const Events=()=>{
           </div>
         </div>
               )
-            )):(<></>)}
+            // )):(<></>
+            )
+          }
                 </div>
 
           </div>
