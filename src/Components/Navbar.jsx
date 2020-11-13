@@ -13,6 +13,7 @@ const Navbar = () =>{
                     </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
@@ -21,6 +22,9 @@ const Navbar = () =>{
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" target="__blank" href="https://hack101.netlify.app/">Hack 101</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#faq">FAQ</a>
