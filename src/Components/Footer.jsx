@@ -6,7 +6,7 @@ const Footer = () => {
       <footer>
         <div className="container p-3">
           <div className="row">
-            <div className="col-lg-4 col-12">
+            <div className="col-lg-4 col-12 text-center">
               <img
                 src="/Images/logo.png"
                 alt="logo"
@@ -20,24 +20,24 @@ const Footer = () => {
               <a href="mailto:dsc_vzg@gitam.in">
               dsc_vzg@gitam.in
               </a>
-              <ul className="list-unstyled d-flex justify-content-center align-items-center fa-lg mt-3" >
+              <ul className="list-unstyled d-flex justify-content-center align-items-center fa-lg mt-3">
                 <li className="">
-                  <a href="#">
+                  <a href="http://bit.ly/dscDiscord" target="_blank">
                     <i class="fab fa-discord"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/dsc.gitam/" target="_blank">
                     <i class="fab fa-instagram pl-3"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/dsc-gitam" target="_blank">
                     <i class="fab fa-github pl-3"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.youtube.com/channel/UCXhCLCmeLh1IDymLDlAUKdw" target="_blank">
                     <i class="fab fa-youtube pl-3"></i>
                   </a>
                 </li>

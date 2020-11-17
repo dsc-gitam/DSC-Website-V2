@@ -18,6 +18,7 @@ import { Toast } from "reactstrap";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { MainEvents } from "./Components/MainEvents";
+import Cards from "./Components/Cards";
 
 firebase.initializeApp(firebaseConfig);
 
@@ -40,6 +41,7 @@ function App() {
               <Route exact path="/addevent" component={AddEvent}/>
               <Route exact path="/editevent" component={EditEvent}/>
               <Route exact path="/edititem" component={EditItem}/>
+              <Route exact path="/team" component={Cards} />
           </Switch>
           </EditKeyContext.Provider>
           </EditContext.Provider>

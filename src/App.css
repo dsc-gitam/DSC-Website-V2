@@ -271,10 +271,12 @@ a:hover{
   }
   .btn-style{
     padding: 6px !important;
-    margin: auto;
+    text-align: center;
+    margin: right;
   }
   .techbtn{
     padding:6px 6px !important;
+    width: 48% !important;
   }
 
   .hero{

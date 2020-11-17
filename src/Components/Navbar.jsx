@@ -14,19 +14,19 @@ const Navbar = () =>{
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#technologies">Technologies</a>
+                        <a class="nav-link" href="/#technologies">Technologies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#events">Events</a>
+                        <a class="nav-link" href="/#events">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
+                        <a class="nav-link" href="/#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
+                        <a class="nav-link" href="/team">Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn-style" href="https://dsc.community.dev/gandhi-institute-of-technology-and-management-visakhapatnam-campus/" target="__blank">Join Us</a>

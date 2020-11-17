@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Team from "./Team";
+// import Team from "./Team";
 import Footer from "./Footer";
 import { Col, Row, Button } from "reactstrap";
 import { MainEvents } from "./MainEvents";
@@ -69,7 +69,7 @@ export const MainPage = () => {
 
       {/* Scroll Down  */}
       <div className="hero ">
-        <a href="#" className="scroll-down">
+        <a href="#opportunities" className="scroll-down">
           <div className="mouse">
             <span></span>
           </div>
@@ -80,7 +80,7 @@ export const MainPage = () => {
       </div>
 
       {/* ------ Opportunities section  ------- */}
-      <div class="container my-5">
+      <div class="container my-5 " id="opportunities">
         <h3 class="text-center">Opportunities DSCs provide students with</h3>
         <div class="row align-items-center justify-content-center mt-5">
           <div class="col-sm-6">
@@ -132,8 +132,8 @@ export const MainPage = () => {
       {/* Techonologies we are working on  */}
       <div id="technologies" className="tech-sec p-3 m-2">
         <div className="container ">
-          <h3>Technologies We're Excited About</h3>
-          <p className="pb-4">
+          <h3 className="text-center">Technologies We're Excited About</h3>
+          <p className="pb-4 text-center">
             Opportunities to learn & access deep technical content.
           </p>
 
@@ -257,11 +257,7 @@ export const MainPage = () => {
           <MainEvents />
         </div>
       </div>
-
-      <div id="team" className="team">
-        <Team />
-      </div>
-
+      
       {/* ----------- FAQ ----------  */}
       <div id="faq" className="faq bg-light">
         <div className="container bg-light mb-3">
