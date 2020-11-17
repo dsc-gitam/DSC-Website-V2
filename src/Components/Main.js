@@ -3,9 +3,12 @@ import Navbar from "./Navbar";
 // import Team from "./Team";
 import Footer from "./Footer";
 import { Col, Row, Button } from "reactstrap";
-import { MainEvents } from "./MainEvents";
+import { Redirect } from "react-router-dom";
+import {Link, useHistory} from "react-router-dom"
+
 
 export const MainPage = () => {
+  const history=useHistory();
   return (
     <div>
       {/* ---------- header ---------  */}
@@ -248,13 +251,17 @@ export const MainPage = () => {
 
       {/* --------- Events ---------  */}
 
-      <div id="events" className="event-sec m-5">
-        <div className="container">
+      <div id="events" className="event-sec m-5" style={{position:"relative",paddingBottom:"35px"}}>
+      <div className="container">
           <h3 className="text-center">Events & Workshops</h3>
           <p className="text-center">
             Come learn, share and connect with us in person.
           </p>
-          <MainEvents />
+          <button className="btn techbtn" onClick={()=>{history.push('/events')}} style={{ width: "25%",position:"absolute",left:"37.5%",right:"37.5%",marginTop:"10px"}}>
+                <a style={{ color: "white" }} >
+                  View Our Events
+                </a>
+              </button>
         </div>
       </div>
       
