@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import Team from "./Team";
 import Footer from "./Footer";
 import { Col, Row, Button } from "reactstrap";
-import { MainEvents } from "./MainEvents";
 import { Redirect } from "react-router-dom";
 import {Link, useHistory} from "react-router-dom"
 
