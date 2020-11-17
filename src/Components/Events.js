@@ -42,7 +42,7 @@ export const Events=()=>{
             // (sortedData!=null)?(
               sortedData.map((value)=>(
         <div className="col-lg-4 col-md-6 col-12 card-btm" style={{width:"300px"}}>
-          <img class="card-img-top" style={{height:"250px"}} src={value.picture} alt="Card image cap"/>
+          <img class="card-img-top" style={{height:"250px"}} src="https://via.placeholder.com/250" alt="Card image cap"/>
           <div class="card-body">
               <h3 className="text-left card-text" style={{marginBottom:"15px"}} >{value.EventName}</h3>
             <Row>

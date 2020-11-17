@@ -7,7 +7,7 @@ const Cards = () => {
         <div className="team">
              <div className="container mt-5 pt-5 mb-4">
              <h2 className="text-primary text-center mb-3">Our Team</h2>
-                <div className="row  d-flex align-items-center pl-2" style={{justifyContent:"space-between"}}>
+                <div className="row  d-flex align-items-center pl-2 text-center" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
                         <CardUI src="/Images/Asish.jpg" title="V Asish Raju" position="Lead"
                             twitter="https://twitter.com/asish_io"

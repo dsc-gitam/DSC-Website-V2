@@ -257,7 +257,7 @@ export const MainPage = () => {
           <p className="text-center">
             Come learn, share and connect with us in person.
           </p>
-          <button className="btn techbtn" onClick={()=>{history.push('/events')}} style={{ width: "25%",position:"absolute",left:"37.5%",right:"37.5%",marginTop:"10px"}}>
+          <button className="btn techbtn" onClick={()=>{history.push('/events')}} style={{ width: "20%" , position:"relative" , left:"50%",top:"50%",transform:"translate(-50%,-50%)", marginTop:"20px" }}>
                 <a style={{ color: "white" }} >
                   View Our Events
                 </a>
