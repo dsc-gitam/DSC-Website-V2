@@ -29,7 +29,7 @@ export const MainPage = () => {
               style={{ flexDirection: "column" }}
             >
               <h4 className="text-left main-head">
-                Developer Student Club Gitam Deemed to be University .
+                Developer Student Club, GITAM Deemed to be University 👋
               </h4>
               <p className="mt-3 text-left main-para lead">
                 Developer Student Clubs is a{" "}
@@ -39,12 +39,12 @@ export const MainPage = () => {
                 <span className="text-primary">g</span>
                 <span className="text-success">l</span>
                 <span className="text-danger">e</span> Developers program for
-                university students to learn trending technologies like{" "}
+                university students to learn and practice trending technologies like{" "}
                 <span className="text-danger">ML/AI</span>,{" "}
                 <span className="text-primary">Cloud-Computing</span>,{" "}
-                <span className="text-success">Andriod</span> and{" "}
-                <span className="text-primary">Web developement</span> skills
-                ,design thinking skills and leadership skills and many more.
+                <span className="text-success">Andriod</span> ,{" "}
+                <span className="text-primary">Web developement</span> and
+                leverage these potential tools to build strategic solutions for the community!
               </p>
               <button className="btn align-self-start member-btn">
                 <i className="fas fa-users text-white"></i>{" "}
@@ -84,15 +84,14 @@ export const MainPage = () => {
 
       {/* ------ Opportunities section  ------- */}
       <div class="container my-5 " id="opportunities">
-        <h3 class="text-center">Opportunities DSCs provide students with</h3>
+        <h3 class="text-center">Hamlet of Oppurtunities! ⛹️</h3>
         <div class="row align-items-center justify-content-center mt-5">
           <div class="col-sm-6">
             <div class=""></div>
             <div class="card-body">
               <p>
-                <i class="fas fa-angle-right"></i> Grow their knowledge on
-                developer technologies and more through peer to peer workshops
-                and events.
+                <i class="fas fa-angle-right"></i> Learn-Practice-Create
+                  potential solutions that impacts the envrionment around you!
               </p>
             </div>
           </div>
@@ -100,9 +99,8 @@ export const MainPage = () => {
             <div class=""></div>
             <div class="card-body">
               <p>
-                <i class="fas fa-angle-right"></i> Grow their knowledge on
-                developer technologies and more through peer to peer workshops
-                and events.
+                <i class="fas fa-angle-right"></i> Connect and
+                build your network with like minded people, a platform to share and seek ideas.
               </p>
             </div>
           </div>
@@ -113,9 +111,9 @@ export const MainPage = () => {
             <div class=""></div>
             <div class="card-body">
               <p>
-                <i class="fas fa-angle-right"></i> Grow their knowledge on
-                developer technologies and more through peer to peer workshops
-                and events.
+                <i class="fas fa-angle-right"></i> We believe in 
+                channelizing ideas through work, visualise the aspects by taking
+                part in numerous Hackathons conducted throughout the year.
               </p>
             </div>
           </div>
@@ -123,7 +121,7 @@ export const MainPage = () => {
             <div class=""></div>
             <div class="card-body">
               <p>
-                <i class="fas fa-angle-right"></i> Grow their knowledge on
+                <i class="fas fa-angle-right"></i> Grow your knowledge on
                 developer technologies and more through peer to peer workshops
                 and events.
               </p>
@@ -137,7 +135,7 @@ export const MainPage = () => {
         <div className="container ">
           <h3 className="text-center">Technologies We're Excited About</h3>
           <p className="pb-4 text-center">
-            Opportunities to learn & access deep technical content.
+            Learn and Build with DSC! 🏗️
           </p>
 
           <div className="row mb-5 bg-light ">
@@ -259,7 +257,7 @@ export const MainPage = () => {
           </p>
           <button className="btn techbtn" onClick={()=>{history.push('/events')}} style={{ width: "20%" , position:"relative" , left:"50%",top:"50%",transform:"translate(-50%,-50%)", marginTop:"20px" }}>
                 <a style={{ color: "white" }} >
-                  View Our Events
+                  View Our Events 🗓️
                 </a>
               </button>
         </div>
@@ -268,14 +266,14 @@ export const MainPage = () => {
       {/* ----------- FAQ ----------  */}
       <div id="faq" className="faq bg-light">
         <div className="container bg-light mb-3">
-          <h4 className="text-center pt-5 pb-4">Frequently Asked Questions</h4>
+          <h4 className="text-center pt-5 pb-4">Frequently Asked Questions ❓</h4>
           <div class="row pb-5">
             <div className="col-lg-6 col-12">
-              <h5 className="text-left">Who can become a member?</h5>
+              <h5 className="text-left">Why should I join DSC?</h5>
               <p className="text-left lead" style={{ fontSize: "15px" }}>
-                The clubs is open to any student, ranging from novice developers
-                who are just starting, to advanced developers who want to
-                further their skills.
+                If you have a knack for building potential solutions and 
+                leveraging new technologies to explore the unexplored, then DSC is just the
+                place to come to learn - build - grow with the community.
               </p>
             </div>
             <div className="col-lg-6 col-12">
@@ -283,9 +281,9 @@ export const MainPage = () => {
                 How frequently do events and workshops occur?
               </h5>
               <p className="text-left lead" style={{ fontSize: "15px" }}>
-                We have a hands-on session every Tuesday at SG25 from 1800hrs to
-                2030hrs. We also hold workshops and showcases & we would
-                recommend you to join our community on Meetup to get updates.
+                We conduct a minimum of 2 events every month, in addition to
+                our monthly hackathon HACK 101, the events are not constrainted 
+                to any particular year of students.
               </p>
             </div>
           </div>
@@ -296,17 +294,17 @@ export const MainPage = () => {
               <p className="text-left lead" style={{ fontSize: "15px" }}>
                 The clubs is open to any student, ranging from novice developers
                 who are just starting, to advanced developers who want to
-                further their skills.
+                further develop their skills.
               </p>
             </div>
             <div className="col-lg-6 col-12">
               <h5 className="text-left">
-                How frequently do events and workshops occur?
+                How can I stay updated about the events?
               </h5>
               <p className="text-left lead" style={{ fontSize: "15px" }}>
-                We have a hands-on session every Tuesday at SG25 from 1800hrs to
-                2030hrs. We also hold workshops and showcases & we would
-                recommend you to join our community on Meetup to get updates.
+                All the event news are available under the Events section of this site,
+                one can also join our discord server to keep themselves updated 
+                about the same.
               </p>
             </div>
           </div>

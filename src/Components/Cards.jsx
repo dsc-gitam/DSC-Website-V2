@@ -52,11 +52,11 @@ const Cards = () => {
                         />
                     </div>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
-                        <CardUI src="/Images/dummy-men.jpg" title="Dheeraj Chowdary" position="Django Developer"
-                            twitter=""
-                            github=""
-                            linkedin=""
-                            insta=""
+                        <CardUI src="/Images/Dheeraj.jpeg" title="Dheeraj Chowdary" position="Django Developer"
+                            twitter="https://twitter.com/Dheeru_99"
+                            github="https://github.com/Dheerajdoppalapudi"
+                            linkedin="https://www.linkedin.com/in/d-dheeraj-chowdary-7b8055119/"
+                            insta="https://www.instagram.com/doppalapudidheeraj/"
                         />
                     </div>
                 </div>
@@ -90,11 +90,11 @@ const Cards = () => {
 
                 <div className="row  d-flex align-items-center pl-2 mt-3" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
-                        <CardUI src="/Images/dummy-men.jpg" title="Anish Dora" position="UI/UX Designer"
+                        <CardUI src="/Images/Anish.jpeg" title="Anish Dora" position="UI/UX Designer"
                             twitter=""
-                            github=""
-                            linkedin=""
-                            insta=""
+                            github="https://github.com/AnishDora"
+                            linkedin="https://www.linkedin.com/in/anish-dora-15622b200/"
+                            insta="https://www.instagram.com/anish.dora/"
                         />
                     </div>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
@@ -102,15 +102,15 @@ const Cards = () => {
                             twitter=""
                             github=""
                             linkedin="https://www.linkedin.com/in/jyotirmayi-swain-02b1b71a0/"
-                            insta=""
+                            insta="https://www.instagram.com/jyotirmayiswain/"
                         />
                     </div>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
-                        <CardUI src="/Images/dummy-img.jpg" title="Sheetal Patnaik" position="Content Writer"
-                            twitter=""
-                            github=""
-                            linkedin=""
-                            insta=""
+                        <CardUI src="/Images/Sheetal.jpeg" title="Sheetal Patnaik" position="Content Writer"
+                            twitter="https://twitter.com/SheetalPatnaik2?s=09"
+                            github="https://github.com/SheetalPatnaik"
+                            linkedin="https://www.linkedin.com/in/sheetal-patnaik-0b406b1a9/"
+                            insta="https://www.instagram.com/sheetal_patnaik/"
                         />
                     </div>
                 </div>
@@ -154,8 +154,8 @@ const Cards = () => {
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
                         <CardUI src="/Images/Atul.jpg" title="Atul Dwivedi" position="Competitive Programming"
                             twitter=""
-                            github=""
-                            linkedin=""
+                            github="https://github.com/Atuld02"
+                            linkedin="https://www.linkedin.com/in/atul-dwivedi-2a4030182/"
                             insta=""
                         />
                     </div>
