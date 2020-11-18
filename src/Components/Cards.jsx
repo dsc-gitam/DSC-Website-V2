@@ -63,7 +63,7 @@ const Cards = () => {
 
                 <div className="row  d-flex align-items-center pl-2 mt-3" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
-                        <CardUI src="/Images/Sunil.jpg" title="V Sunil Tagore" position="ML/DS"
+                        <CardUI src="/Images/sunil.jpg" title="V Sunil Tagore" position="ML/DS"
                             twitter="https://twitter.com/vsuniltagore858"
                             github="https://github.com/Sunil-tagore"
                             linkedin="https://www.linkedin.com/in/sunil-tagore-veluturi-366b8917b/"
