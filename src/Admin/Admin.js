@@ -3,6 +3,7 @@ import {Link, useHistory} from "react-router-dom"
 import { AdminContext } from "../Context/Context";
 import firebase from "firebase/app";
 import { toast } from "react-toastify";
+import AddMember from "./addMember/addMember"
 export const Admin=()=>{
   const history=useHistory();
   const {isAdmin,setIsAdmin}=useContext(AdminContext);
@@ -30,7 +31,9 @@ export const Admin=()=>{
         <h1>Admin Page</h1>
         {
           (isAdmin)?(
-        <>
+            
+            <>
+            <AddMember/>
         <button class="btn btn-secondary" onClick={()=>{history.push('/addEvent')}}>Add Event</button>
         <br />
         <button class="btn btn-secondary" style={{marginTop:"10px"}} onClick={()=>{history.push('/editevent')}}>Edit Event</button>
