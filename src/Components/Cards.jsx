@@ -9,11 +9,11 @@ const Cards = () => {
              <h2 className="text-primary text-center mb-3">Our Team</h2>
                 <div className="row  d-flex align-items-center pl-2 text-center" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
-                        <CardUI src="/Images/Asish.jpg" title="V Asish Raju" position="Lead"
-                            twitter="https://twitter.com/asish_io"
-                            github="https://github.com/AsishRaju"
-                            linkedin="https://www.linkedin.com/in/asishraju/"
-                            insta="https://www.instagram.com/asish.io/"
+                    <CardUI src="/Images/Guru.jpg" title="Guru Charan" position="Lead"
+                            twitter="https://twitter.com/GuruCha93995977"
+                            github="https://github.com/guruc-134"
+                            linkedin="https://www.linkedin.com/in/guru-charan-7103561a1/"
+                            insta="https://www.instagram.com/gurucharan13/"
                         />
                     </div>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
@@ -36,15 +36,15 @@ const Cards = () => {
 
                 <div className="row  d-flex align-items-center pl-2 mt-3" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
-                        <CardUI src="/Images/Sreeram.jpg" title="T Sreeram" position="Web Developer"
-                            twitter="https://twitter.com/SreeramThatava1?s=08"
-                            github="https://github.com/SreeramThatavarthi/"
-                            linkedin="https://www.linkedin.com/in/sreeram-thatavarthi"
-                            insta="https://www.instagram.com/ram_thatavarthi/"
+                    <CardUI src="/Images/Dheeraj.jpeg" title="Dheeraj Chowdary" position="Django Developer"
+                            twitter="https://twitter.com/Dheeru_99"
+                            github="https://github.com/Dheerajdoppalapudi"
+                            linkedin="https://www.linkedin.com/in/d-dheeraj-chowdary-7b8055119/"
+                            insta="https://www.instagram.com/doppalapudidheeraj/"
                         />
                     </div>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
-                        <CardUI src="/Images/Naveen.jpg" title="J V Naveen Babu" position="Web Developer"
+                        <CardUI src="/Images/mee.png" title="K Krishna Chaitanya" position="Web Developer"
                             twitter="https://twitter.com/JVNaveenBabu1"
                             github="https://github.com/jvnaveenbabu"
                             linkedin="https://www.linkedin.com/in/j-v-naveen-babu/"

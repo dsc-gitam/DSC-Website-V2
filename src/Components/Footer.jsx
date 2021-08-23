@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container p-3">
+        <div className="container p-3 m-5">
           <div className="row">
             <div className="col-lg-4 col-12 text-center">
               <img
