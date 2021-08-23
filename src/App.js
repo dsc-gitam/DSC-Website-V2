@@ -18,9 +18,9 @@ import { Toast } from "reactstrap";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Cards from "./Components/Cards";
-
+require('dotenv').config()
+console.log(process.env.REACT_APP_FIREBASE_API_KEY)
 firebase.initializeApp(firebaseConfig);
-
 function App() {
   const [isAdmin,setIsAdmin]=useState(false);
   const [EdiitItem,setEdiitItem]=useState("");
