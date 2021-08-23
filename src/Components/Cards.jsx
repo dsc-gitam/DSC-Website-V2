@@ -1,15 +1,37 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import CardUI from "./CardUI";
-
+import { firestore } from '../Firebase/FirebaseConfig';
 
 const Cards = () => {
+    const [members,setMembers] = useState([])
+    useEffect(() =>{
+        firestore.collection('CoreTeam/memberlist/members').get()
+        .then(items=>{
+            const arr =[]
+            items.docs.forEach(item=>arr.push(item.data()))
+            setMembers(arr)
+        })
+    },[])
     return (
         <div className="team">
-             <div className="container mt-5 pt-5 mb-4">
-             <h2 className="text-primary text-center mb-3">Our Team</h2>
-                <div className="row  d-flex align-items-center pl-2 text-center" style={{justifyContent:"space-between"}}>
-                    <div className="col-md-4 col-sm-12 pr-0 mr-0">
-                    <CardUI src="/Images/Guru.jpg" title="Guru Charan" position="Lead"
+            <div className="container mt-5 pt-5 mb-4">
+            <h2 className="text-primary text-center mb-3">Our Team</h2>
+                        <div>
+                            list
+                        {
+                            members.map(member=>{
+                                // <CardUI src="/Images/Guru.jpg" title="Guru Charan" position="Lead"
+                                // twitter="https://twitter.com/GuruCha93995977"
+                                // github="https://github.com/guruc-134"
+                                // linkedin="https://www.linkedin.com/in/guru-charan-7103561a1/"
+                                // insta="https://www.instagram.com/gurucharan13/"
+                                // />
+                                {console.log(member)}
+                            })
+                        }
+                        </div>
+
+                    {/* <CardUI src="/Images/Guru.jpg" title="Guru Charan" position="Lead"
                             twitter="https://twitter.com/GuruCha93995977"
                             github="https://github.com/guruc-134"
                             linkedin="https://www.linkedin.com/in/guru-charan-7103561a1/"
@@ -186,7 +208,7 @@ const Cards = () => {
                             insta="https://instagram.com/bidisha.mukherjee_?igshid=17u2uj2idyl2g"
                         />
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </div>

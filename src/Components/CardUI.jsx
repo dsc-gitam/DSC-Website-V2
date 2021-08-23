@@ -6,6 +6,7 @@ import './CardStyle.css';
 const CardUI = (props) => {
     return (
         <>
+        {console.log('inside card')}
         <div className="container d-flex justify-content-center align-items-center ">
             <div className="card text-center shadow m-1">
                 <div className="overflow d-flex justify-content-center align-items-center" style={{flexDirection:"column", position:"relative"}}>

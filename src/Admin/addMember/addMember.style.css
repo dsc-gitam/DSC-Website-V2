@@ -1,0 +1,17 @@
+.member-details{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin:2rem;
+}
+.addMember-btn{
+    display: block;
+    border:none;
+    margin:2rem;
+    padding:.8em;
+    outline:none;
+    border-radius: 10px;
+    background-color:#4285F4;
+    color:white;
+}

@@ -1,10 +1,14 @@
 import React, {useState} from 'react'
-import {firestore} from '../../Firebase/FirebaseConfig'
+import {firestore} from '../../Firebase/FirebaseConfig';
+import './addMember.style.css'
 function AddMember() {
     const [name,setName] = useState("")
     const [position,setPosition] = useState("")
     const [zval,setZval] = useState("")
     const [linkedin,setLinkedin] = useState("")
+    const [insta,setInsta] = useState("")
+    const [github,setGithub] = useState("")
+
 
     const handleChange = (e) =>{
         const {name,value} = e.target;
@@ -12,27 +16,53 @@ function AddMember() {
         if(name === 'position') setPosition(value)
         if(name === 'zval') setZval(value)
         if(name === 'linkedin') setLinkedin(value)
+        if(name === 'insta') setInsta(value)
+        if(name === 'github') setGithub(value)
+
+
     }
     const addMember = (e) =>{
         e.preventDefault();
-        firestore.collection('CoreTeam').add({name,position,zval,linkedin})
+        firestore.collection('CoreTeam/memberlist/members').add({name,position,zval,linkedin})
         setName('')
         setPosition('')
         setLinkedin('')
         setZval('')
+        setInsta('')
+        setGithub('')
     }
     return (
         <div>
-            <form onSubmit={addMember}>
-                <lable for='name'>name</lable>
-                <input value={name} name='name' onChange={handleChange} />
+            <form className='addMember-form' onSubmit={addMember}>
+                <div className='member-details'>
 
-                <lable for='position'>position</lable>
-                <input value={position} name='position' onChange={handleChange} />
+                <div>
+                <lable htmlFor='name'>name</lable>
+                <input className='form-control' value={name} name='name' onChange={handleChange} />
+                </div>
 
-                <lable for='linkedin'>linkedin</lable>
-                <input value={linkedin} name='linkedin' onChange={handleChange} />
-                <button type='submit'>
+                <div>
+                <lable htmlFor='position'>position</lable>
+                <input className='form-control' value={position} name='position' onChange={handleChange} />
+                </div>
+
+                <div>
+                <lable htmlFor='linkedin'>linkedin</lable>
+                <input className='form-control' value={linkedin} name='linkedin' onChange={handleChange} />
+                </div>
+
+                <div>
+                <lable htmlFor='insta'>insta</lable>
+                <input className='form-control' value={insta} name='insta' onChange={handleChange} />
+                </div>
+
+                <div>
+                <lable htmlFor='github'>github</lable>
+                <input className='form-control' value={github} name='github' onChange={handleChange} />
+                </div>
+                </div>
+                
+                <button className='addMember-btn' type='submit'>
                     Add
                 </button>
             </form>

@@ -1,6 +1,7 @@
 import React, { useContext,useEffect,useState } from "react";
 import {Link, useHistory} from "react-router-dom"
 import { AdminContext } from "../Context/Context";
+import './admin.style.css'
 import firebase from "firebase/app";
 import { toast } from "react-toastify";
 import AddMember from "./addMember/addMember"
@@ -42,7 +43,7 @@ export const Admin=()=>{
           ):(
             <div style={{margin:"20px"}}>
               <h5 style={{textAlign:"center"}}>Enter your Admin Password</h5>
-              <input type="password" placeholder={"Your Admin Password"} value={enteredPassword} onChange={(e)=>setEnteredPassword(e.target.value)} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+              <input type="password" placeholder={"Your Admin Password"} value={enteredPassword} onChange={(e)=>setEnteredPassword(e.target.value)} className="form-control adminPassword" id="exampleInputEmail1" aria-describedby="emailHelp"/>
               <button type="button" class="btn btn-primary" onClick={handleAdmin} style={{marginTop:"20px",marginLeft:"20px"}}>Submit</button>
          </div>
           )
