@@ -16,19 +16,15 @@ const Cards = () => {
         <div className="team">
             <div className="container mt-5 pt-5 mb-4">
             <h2 className="text-primary text-center mb-3">Our Team</h2>
-                        <div>
-                            list
-                        {
-                            members.map(member=>{
-                                // <CardUI src="/Images/Guru.jpg" title="Guru Charan" position="Lead"
-                                // twitter="https://twitter.com/GuruCha93995977"
-                                // github="https://github.com/guruc-134"
-                                // linkedin="https://www.linkedin.com/in/guru-charan-7103561a1/"
-                                // insta="https://www.instagram.com/gurucharan13/"
-                                // />
-                                {console.log(member)}
-                            })
-                        }
+                        <div style={{display:"flex",justifyContent:"center"}}>
+                        {members.map(member=>
+                        <CardUI src="/Images/Guru.jpg" title="Guru Charan" position="Lead"
+                                twitter={member.linkedin}
+                                github={member.linkedin}
+                                linkedin={member.linkedin}
+                                insta={member.linkedin}
+                                />
+                                )}
                         </div>
 
                     {/* <CardUI src="/Images/Guru.jpg" title="Guru Charan" position="Lead"
@@ -55,7 +51,6 @@ const Cards = () => {
                         />
                     </div>
                 </div>
-
                 <div className="row  d-flex align-items-center pl-2 mt-3" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
                     <CardUI src="/Images/Dheeraj.jpeg" title="Dheeraj Chowdary" position="Django Developer"
@@ -82,7 +77,6 @@ const Cards = () => {
                         />
                     </div>
                 </div>
-
                 <div className="row  d-flex align-items-center pl-2 mt-3" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
                         <CardUI src="/Images/sunil.jpg" title="V Sunil Tagore" position="ML/DS"
@@ -109,7 +103,6 @@ const Cards = () => {
                         />
                     </div>
                 </div>
-
                 <div className="row  d-flex align-items-center pl-2 mt-3" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
                         <CardUI src="/Images/Anish.jpeg" title="Anish Dora" position="UI/UX Designer"
@@ -136,7 +129,6 @@ const Cards = () => {
                         />
                     </div>
                 </div>
-
                 <div className="row  d-flex align-items-center pl-2 mt-3" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
                         <CardUI src="/Images/Sanjana.jpg" title="Sanjana Rayavarapu" position="Content Writer"
@@ -163,7 +155,6 @@ const Cards = () => {
                         />
                     </div>
                 </div>
-
                 <div className="row  d-flex align-items-center pl-2 mt-3" style={{justifyContent:"space-between"}}>
                     <div className="col-md-4 col-sm-12 pr-0 mr-0">
                         <CardUI src="/Images/Rakesh.jpg" title="Rakesh Naidu" position="Competitive Programming"
@@ -190,7 +181,6 @@ const Cards = () => {
                         />
                     </div>
                 </div>
-
                 <div className="row  d-flex align-items-center pl-2 mt-3" style={{justifyContent:"center"}}>
                     <div className="col-lg-4 col-sm-12 pr-0 mr-0">
                         <CardUI src="/Images/Guru.jpg" title="Guru Charan" position="Competitive Programming"

@@ -4,11 +4,10 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Col, Row, Button } from "reactstrap";
 import { Redirect } from "react-router-dom";
-import {Link, useHistory} from "react-router-dom"
-
+import { Link, useHistory } from "react-router-dom";
 
 export const MainPage = () => {
-  const history=useHistory();
+  const history = useHistory();
   return (
     <div>
       {/* ---------- header ---------  */}
@@ -39,12 +38,13 @@ export const MainPage = () => {
                 <span className="text-primary">g</span>
                 <span className="text-success">l</span>
                 <span className="text-danger">e</span> Developers program for
-                university students to learn and practice trending technologies like{" "}
-                <span className="text-danger">ML/AI</span>,{" "}
+                university students to learn and practice trending technologies
+                like <span className="text-danger">ML/AI</span>,{" "}
                 <span className="text-primary">Cloud-Computing</span>,{" "}
                 <span className="text-success">Andriod</span> ,{" "}
                 <span className="text-primary">Web developement</span> and
-                leverage these potential tools to build strategic solutions for the community!
+                leverage these potential tools to build strategic solutions for
+                the community!
               </p>
               <button className="btn align-self-start member-btn">
                 <i className="fas fa-users text-white"></i>{" "}
@@ -91,7 +91,7 @@ export const MainPage = () => {
             <div class="card-body">
               <p>
                 <i class="fas fa-angle-right"></i> Learn-Practice-Create
-                  potential solutions that impacts the envrionment around you!
+                potential solutions that impacts the envrionment around you!
               </p>
             </div>
           </div>
@@ -99,8 +99,9 @@ export const MainPage = () => {
             <div class=""></div>
             <div class="card-body">
               <p>
-                <i class="fas fa-angle-right"></i> Connect and
-                build your network with like minded people, a platform to share and seek ideas.
+                <i class="fas fa-angle-right"></i> Connect and build your
+                network with like minded people, a platform to share and seek
+                ideas.
               </p>
             </div>
           </div>
@@ -111,9 +112,9 @@ export const MainPage = () => {
             <div class=""></div>
             <div class="card-body">
               <p>
-                <i class="fas fa-angle-right"></i> We believe in 
-                channelizing ideas through work, visualise the aspects by taking
-                part in numerous Hackathons conducted throughout the year.
+                <i class="fas fa-angle-right"></i> We believe in channelizing
+                ideas through work, visualise the aspects by taking part in
+                numerous Hackathons conducted throughout the year.
               </p>
             </div>
           </div>
@@ -134,9 +135,7 @@ export const MainPage = () => {
       <div id="technologies" className="tech-sec p-3 m-2">
         <div className="container ">
           <h3 className="text-center">Technologies We're Excited About</h3>
-          <p className="pb-4 text-center">
-            Learn and Build with DSC! 🏗️
-          </p>
+          <p className="pb-4 text-center">Learn and Build with DSC! 🏗️</p>
 
           <div className="row mb-5 bg-light ">
             <div className="col-lg-6 col-12">
@@ -155,7 +154,10 @@ export const MainPage = () => {
                 without being explicitly programmed.
               </p>
               <button className="btn techbtn" style={{ width: "25%" }}>
-                <a style={{ color: "white" }} href="http://bit.ly/dscDiscord">
+                <a
+                  style={{ color: "white" }}
+                  href="https://discord.com/invite/KCBcf5V833?ltclid=2413d924-5457-4ab4-aa9b-19d12dcc9a5a"
+                >
                   Join Discord{" "}
                   <i class="fab fa-discord pl-1" style={{ color: "white" }}></i>
                 </a>
@@ -176,7 +178,10 @@ export const MainPage = () => {
                 Android development.
               </p>
               <button className="btn techbtn" style={{ width: "25%" }}>
-                <a style={{ color: "white" }} href="http://bit.ly/dscDiscord">
+                <a
+                  style={{ color: "white" }}
+                  href="https://discord.com/invite/KCBcf5V833?ltclid=2413d924-5457-4ab4-aa9b-19d12dcc9a5a"
+                >
                   Join Discord{" "}
                   <i class="fab fa-discord pl-1" style={{ color: "white" }}></i>
                 </a>
@@ -213,7 +218,10 @@ export const MainPage = () => {
                 hands-on coding experience.
               </p>
               <button className="btn techbtn" style={{ width: "25%" }}>
-                <a style={{ color: "white" }} href="http://bit.ly/dscDiscord">
+                <a
+                  style={{ color: "white" }}
+                  href="https://discord.com/invite/KCBcf5V833?ltclid=2413d924-5457-4ab4-aa9b-19d12dcc9a5a"
+                >
                   Join Discord{" "}
                   <i class="fab fa-discord pl-1" style={{ color: "white" }}></i>
                 </a>
@@ -234,7 +242,10 @@ export const MainPage = () => {
                 between data, insight, and action.
               </p>
               <button className="btn techbtn" style={{ width: "25%" }}>
-                <a style={{ color: "white" }} href="http://bit.ly/dscDiscord">
+                <a
+                  style={{ color: "white" }}
+                  href="https://discord.com/invite/KCBcf5V833?ltclid=2413d924-5457-4ab4-aa9b-19d12dcc9a5a"
+                >
                   Join Discord{" "}
                   <i class="fab fa-discord pl-1" style={{ color: "white" }}></i>
                 </a>
@@ -249,31 +260,49 @@ export const MainPage = () => {
 
       {/* --------- Events ---------  */}
 
-      <div id="events" className="event-sec m-5" style={{position:"relative",paddingBottom:"35px"}}>
-      <div className="container">
+      <div
+        id="events"
+        className="event-sec m-5"
+        style={{ position: "relative", paddingBottom: "35px" }}
+      >
+        <div className="container">
           <h3 className="text-center">Events & Workshops</h3>
           <p className="text-center">
             Come learn, share and connect with us in person.
           </p>
-          <button className="btn techbtn" onClick={()=>{history.push('/events')}} style={{ width: "20%" , position:"relative" , left:"50%",top:"50%",transform:"translate(-50%,-50%)", marginTop:"20px" }}>
-                <a style={{ color: "white" }} >
-                  View Our Events 🗓️
-                </a>
-              </button>
+          <button
+            className="btn techbtn"
+            onClick={() => {
+              history.push("/events");
+            }}
+            style={{
+              width: "20%",
+              position: "relative",
+              left: "50%",
+              top: "50%",
+              transform: "translate(-50%,-50%)",
+              marginTop: "20px",
+            }}
+          >
+            <a style={{ color: "white" }}>View Our Events 🗓️</a>
+          </button>
         </div>
       </div>
-      
+
       {/* ----------- FAQ ----------  */}
       <div id="faq" className="faq bg-light">
         <div className="container bg-light mb-3">
-          <h4 className="text-center pt-5 pb-4">Frequently Asked Questions ❓</h4>
+          <h4 className="text-center pt-5 pb-4">
+            Frequently Asked Questions ❓
+          </h4>
           <div class="row pb-5">
             <div className="col-lg-6 col-12">
               <h5 className="text-left">Why should I join DSC?</h5>
               <p className="text-left lead" style={{ fontSize: "15px" }}>
-                If you have a knack for building potential solutions and 
-                leveraging new technologies to explore the unexplored, then DSC is just the
-                place to come to learn - build - grow with the community.
+                If you have a knack for building potential solutions and
+                leveraging new technologies to explore the unexplored, then DSC
+                is just the place to come to learn - build - grow with the
+                community.
               </p>
             </div>
             <div className="col-lg-6 col-12">
@@ -281,9 +310,9 @@ export const MainPage = () => {
                 How frequently do events and workshops occur?
               </h5>
               <p className="text-left lead" style={{ fontSize: "15px" }}>
-                We conduct a minimum of 2 events every month, in addition to
-                our monthly hackathon HACK 101, the events are not constrainted 
-                to any particular year of students.
+                We conduct a minimum of 2 events every month, in addition to our
+                monthly hackathon HACK 101, the events are not constrainted to
+                any particular year of students.
               </p>
             </div>
           </div>
@@ -302,9 +331,9 @@ export const MainPage = () => {
                 How can I stay updated about the events?
               </h5>
               <p className="text-left lead" style={{ fontSize: "15px" }}>
-                All the event news are available under the Events section of this site,
-                one can also join our discord server to keep themselves updated 
-                about the same.
+                All the event news are available under the Events section of
+                this site, one can also join our discord server to keep
+                themselves updated about the same.
               </p>
             </div>
           </div>

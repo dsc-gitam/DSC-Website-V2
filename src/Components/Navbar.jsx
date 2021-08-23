@@ -5,7 +5,7 @@ const Navbar = () =>{
         <div>
             <nav class="navbar navbar-expand-lg fixed-top navbar-light " style={{backgroundColor:"#fff",borderBottom:"0.2px solid #F0F0F0"}}>
                 <div class="container" >
-                    <a class="navbar-brand" href="#"><img src="/Images/logo.png" alt="" width="200" height="50" /></a>
+                    <a class="navbar-brand" href="#"><img src="/Images/DSC_logo.png" alt="" width="320" height="50" style={{marginTop:"10px"}} /></a>
                     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">

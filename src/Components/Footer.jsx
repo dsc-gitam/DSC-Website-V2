@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-4 col-12 text-center">
               <img
-                src="/Images/logo.png"
+                src="/Images/LOGO3.png"
                 alt="logo"
                 className="img-fluid"
                 width="200"
@@ -22,7 +22,7 @@ const Footer = () => {
               </a>
               <ul className="list-unstyled d-flex justify-content-center align-items-center fa-lg mt-3">
                 <li className="">
-                  <a href="http://bit.ly/dscDiscord" target="_blank">
+                  <a href="https://discord.com/invite/KCBcf5V833?ltclid=2413d924-5457-4ab4-aa9b-19d12dcc9a5a" target="_blank">
                     <i class="fab fa-discord"></i>
                   </a>
                 </li>
