@@ -1,7 +1,11 @@
 import React, {useState} from 'react'
 import {firestore} from '../../Firebase/FirebaseConfig';
 import './addMember.style.css'
+// import addMembersFun from './addUtils';
+
+
 function AddMember() {
+    // addMembersFun()
     const [name,setName] = useState("")
     const [position,setPosition] = useState("")
     const [zval,setZval] = useState("")
