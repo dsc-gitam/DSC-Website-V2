@@ -1,6 +1,7 @@
 .card{
-    width: 16rem;
-    height: 23rem;
+    width: 35%;
+    min-width: 16rem;
+    min-height: 23rem;
 }
 
 .card:hover{
@@ -10,12 +11,20 @@
 .card-body{
     padding: 3rem 0 !important;
 }
-
 .card-text{
     font-size:.9rem;
     padding: 0.4rem 1.9rem;
 }
-
+.cards-container{
+    margin-top:3rem;
+    width:80%;
+    margin:auto;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 /* .overflow{
     overflow: hidden;
