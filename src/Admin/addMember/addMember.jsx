@@ -23,7 +23,7 @@ function AddMember() {
     }
     const addMember = (e) =>{
         e.preventDefault();
-        firestore.collection('CoreTeam/memberlist/members').add({name,position,zval,linkedin})
+        firestore.collection('CoreTeam/memberlist/members').add({name,position,zval,linkedin,github,insta})
         setName('')
         setPosition('')
         setLinkedin('')

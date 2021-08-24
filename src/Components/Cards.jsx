@@ -14,15 +14,15 @@ const Cards = () => {
     },[])
     return (
         <div className="team">
-            <div className="container mt-5 pt-5 mb-4">
+            <div className="container  mt-5 pt-5 mb-4">
             <h2 className="text-primary text-center mb-3">Our Team</h2>
-                        <div style={{display:"flex",justifyContent:"center"}}>
+                        <div style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
                         {members.map(member=>
                         <CardUI src="/Images/Guru.jpg" title="Guru Charan" position="Lead"
                                 twitter={member.linkedin}
-                                github={member.linkedin}
+                                github={member.github}
                                 linkedin={member.linkedin}
-                                insta={member.linkedin}
+                                insta={member.insta}
                                 />
                                 )}
                         </div>
