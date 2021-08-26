@@ -7,7 +7,7 @@ const CardUI = (props) => {
     return (
         <>
         {console.log('inside card')}
-        <div className="container d-flex justify-content-center align-items-center " style={{width:"300px"}}>
+        <div className="container d-flex justify-content-center align-items-center " style={{width:"400px"}}>
             <div className="card text-center shadow m-1">
                 <div className="overflow d-flex justify-content-center align-items-center" style={{flexDirection:"column", position:"relative"}}>
                     <img src={props.src} alt="" className="img-fluid rounded-circle p-0 mt-3" width="220" height="150" style={{display:"block"}}/>
