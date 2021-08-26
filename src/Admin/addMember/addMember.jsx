@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {firestore} from '../../Firebase/FirebaseConfig';
+import {firestore,storage} from '../../Firebase/FirebaseConfig';
 import './addMember.style.css'
 // import './addUtils';
 
@@ -11,7 +11,6 @@ function AddMember() {
     const [linkedin,setLinkedin] = useState("")
     const [insta,setInsta] = useState("")
     const [github,setGithub] = useState("")
-
 
     const handleChange = (e) =>{
         const {name,value} = e.target;
@@ -26,7 +25,8 @@ function AddMember() {
     }
     const addMember = (e) =>{
         e.preventDefault();
-        firestore.collection('CoreTeam/memberlist/members').add({name,position,zval,linkedin,github,insta})
+        firestore.collection('CoreTeam/memberlist/members').add({name,position,zval,linkedin})
+        storage.add('')
         setName('')
         setPosition('')
         setLinkedin('')
