@@ -135,7 +135,7 @@ export const MainPage = () => {
       <div id="technologies" className="tech-sec p-3 m-2">
         <div className="container ">
           <h3 className="text-center">Technologies We're Excited About</h3>
-          <p className="pb-4 text-center">Learn and Build with DSC! 🏗️</p>
+          <p className="pb-4 text-center">Learn and Build with GDSC! 🏗️</p>
 
           <div className="row mb-5 bg-light ">
             <div className="col-lg-6 col-12">
@@ -297,10 +297,10 @@ export const MainPage = () => {
           </h4>
           <div class="row pb-5">
             <div className="col-lg-6 col-12">
-              <h5 className="text-left">Why should I join DSC?</h5>
+              <h5 className="text-left">Why should I join GDSC?</h5>
               <p className="text-left lead" style={{ fontSize: "15px" }}>
                 If you have a knack for building potential solutions and
-                leveraging new technologies to explore the unexplored, then DSC
+                leveraging new technologies to explore the unexplored, then GDSC
                 is just the place to come to learn - build - grow with the
                 community.
               </p>
