@@ -1,5 +1,11 @@
 .member-details {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
   font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  width: 70%;
+  margin-left: 15%;
 }
 .member-details label {
   font-size: larger;
@@ -18,8 +24,8 @@ input[type="text"]:focus {
 }
 
 .addMember-btn {
-  width: 100%;
-
+  width: 68%;
+  border-radius: 5px;
   background-color: #4285f4;
   border: none;
   color: white;
@@ -30,4 +36,47 @@ input[type="text"]:focus {
 }
 .addMember-btn:hover {
   background-color: #0963f5;
+}
+.adminPageButton {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .member-details {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    width: 100%;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  .addMember-btn {
+    width: 50%;
+    border-radius: 5px;
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .addMember-btn:hover {
+    background-color: #0963f5;
+  }
+  .adminPageButton {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

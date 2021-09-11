@@ -82,10 +82,11 @@ function AddMember() {
                     <input placeholder="Enter Your Full Roll Number" className='form-control' value={rollNo} name='rollNo' onChange={handleChange} />
                 </div>
                 </div>
-                
+                <div className="adminPageButton">
                 <button className='addMember-btn' type='submit'>
                     Add
                 </button>
+                </div>
             </form>
         </div>
     )

@@ -23,9 +23,9 @@ const Navbar = () =>{
                     <li class="nav-item">
                         <a class="nav-link" href="/#events">Events</a>
                     </li>
-                    <li class="nav-item">
+                    {/* <li class="nav-item">
                         <a class="nav-link active" aria-current="page" target="__blank" href="https://hack101.netlify.app/">Hack 101</a>
-                    </li>
+                    </li> */}
                     <li class="nav-item">
                         <a class="nav-link" href="/#faq">FAQ</a>
                     </li>

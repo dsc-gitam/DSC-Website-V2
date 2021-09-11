@@ -17,7 +17,7 @@ const CardUI = (props) => {
                     
                     <h4 className="card-title p-0 m-0">{props.title}</h4>
                     <p className="text-secondary">{props.position}</p>
-                    <p><span><a href={props.github} target="_blank"><i className="fab fa-github fa-2x pl-3"></i></a></span> <span><a href={props.linkedin} target="_blank"><i className="fab fa-linkedin fa-2x pl-3"></i></a></span> <span><a href={props.insta} target="_blank"><i className="fab fa-instagram fa-2x pl-3"></i></a></span></p>
+                    <p><span><a href={props.github} target="_blank"><i className="fab fa-github fa-2x pl-3"></i></a></span> <span><a href={props.twitter} target="_blank"><i className="fab fa-twitter fa-2x pl-3"></i></a></span> <span><a href={props.insta} target="_blank"><i className="fab fa-instagram fa-2x pl-3"></i></a></span></p>
                 </div>
             </div>
             </div>
