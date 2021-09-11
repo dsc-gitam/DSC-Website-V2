@@ -27,7 +27,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/dsc.gitam/" target="_blank">
+                  <a href="https://www.instagram.com/gdsc.gitam_vizag/" target="_blank">
                     <i class="fab fa-instagram pl-3"></i>
                   </a>
                 </li>

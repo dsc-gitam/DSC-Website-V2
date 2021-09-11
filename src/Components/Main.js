@@ -28,7 +28,7 @@ export const MainPage = () => {
               style={{ flexDirection: "column" }}
             >
               <h4 className="text-left main-head">
-                Developer Student Club, GITAM Deemed to be University 👋
+                Developer Student Club, GITAM 👋
               </h4>
               <p className="mt-3 text-left main-para lead">
                 Developer Student Clubs is a{" "}

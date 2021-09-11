@@ -19,11 +19,12 @@ const Cards = () => {
             <h2 className="text-primary text-center mb-3">Our Team</h2>
             <div class='cards-container'>
             {members.map((member)=>
-                  <CardUI src={`/Images/${member.regId}.png`}  title={member.name} position={member.position}
+            // console.log(member)
+                  <CardUI src={`/Images/${member.rollNo}.png`}  title={member.name} position={member.position}
                     twitter={member.twitter}
                     github={member.github}
-                    linkedin={member.linkedIn}
-                    insta={member.instagram}
+                    linkedin={member.linkedin}
+                    insta={member.insta}
                     />
             
             
